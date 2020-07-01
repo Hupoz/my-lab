@@ -498,7 +498,7 @@ dict1 = {   # 初始化字典，赋值大陆的省份：三个字长的省/自�
 dict_keys = dict1.keys()  # 以列表形式取出字典的键
 
 for data in data_list:
-    province = data[1][0:2]  # 去数据源中地址的前两个字符，即为省份信息（str）
+    province = data[1][0:2]  # 取数据源中地址的前两个字符，即为省份信息（str）
     for dict_key in dict_keys:
         if province in dict_key:  # 与字典的每一个键（str）做包含关系的判断
             dict1[dict_key].append(data)  # 在字典的该键对应的值（list）中储存地址信息
